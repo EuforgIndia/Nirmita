@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nirmita – Made with Skill. Chosen for Quality.</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0F4D3C;--iv:#F8F5E9;--ch:#252525;--au:#C9A96A;--br:#7A5A3A;--w:#fff;--bg:#F8F5E9;--card:#fff;--tx:#252525;--mu:#5d5d57;--ln:#e4dfd2;--btn:#0F4D3C;--btnt:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121a17;--card:#1b2622;--tx:#f1eee6;--mu:#b5b8ae;--ln:#2c3a34;--btn:#C9A96A;--btnt:#1a1a1a}}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 Lato,system-ui,sans-serif;background:var(--bg);color:var(--tx)}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;margin:0 0 .5em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--au);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--w);color:#000;padding:8px;z-index:99}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:1px solid var(--ln);z-index:5}
+.bar{max-width:1120px;margin:auto;padding:10px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.logo{font:700 22px 'Playfair Display',serif;letter-spacing:.12em;text-decoration:none;color:var(--g);display:flex;align-items:center;gap:10px}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .logo{color:var(--au)}}
+.logo small{display:block;font:400 12px Lato;letter-spacing:0;color:var(--mu)}
+.search{flex:1;min-width:160px}
+input,select{font:inherit;padding:10px 12px;border:1px solid var(--ln);border-radius:10px;background:var(--bg);color:var(--tx);width:100%}
+nav{max-width:1120px;margin:auto;padding:0 16px 8px;display:flex;gap:4px 16px;overflow-x:auto;white-space:nowrap}
+nav a{text-decoration:none;font-size:14px;padding:6px 0;color:var(--mu)}nav a:hover,nav a[aria-current]{color:var(--tx);text-decoration:underline}
+.btn{display:inline-block;background:var(--btn);color:var(--btnt);border:0;border-radius:999px;padding:11px 22px;font:700 15px Lato;cursor:pointer;text-decoration:none}
+.btn.o{background:transparent;color:var(--tx);border:1.5px solid var(--tx)}
+.ib{background:none;border:1px solid var(--ln);border-radius:999px;padding:8px 14px;color:var(--tx);cursor:pointer;font:inherit}
+main{max-width:1120px;margin:auto;padding:0 16px 48px}
+.demo{background:var(--g);color:#fff;font-size:13px;text-align:center;padding:6px 12px}
+.hero{display:grid;gap:24px;padding:40px 0;align-items:center}
+@media(min-width:800px){.hero{grid-template-columns:1.1fr .9fr}}
+.hero h1{font-size:clamp(34px,6vw,58px)}
+.hero p{color:var(--mu);max-width:48ch}
+.art{aspect-ratio:4/5;border-radius:24px;background:linear-gradient(160deg,var(--g),#2d6b57 60%,var(--au));display:grid;place-items:center;color:#fff;font:italic 500 22px 'Playfair Display',serif;text-align:center;padding:24px}
+section{margin-top:48px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card .im{aspect-ratio:1;display:grid;place-items:center;font:italic 500 15px 'Playfair Display',serif;color:#fff;text-align:center;padding:12px}
+.card .b{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card a.t{text-decoration:none;font-weight:600}
+.mu{color:var(--mu);font-size:14px}
+.badge{font-size:12px;background:var(--bg);border:1px solid var(--au);border-radius:999px;padding:2px 10px;align-self:flex-start}
+.price{font-weight:600}.price s{color:var(--mu);font-weight:400;margin-left:6px}
+.cats a{display:flex;align-items:end;min-height:120px;padding:14px;border-radius:18px;color:#fff;text-decoration:none;font:600 18px 'Playfair Display',serif}
+.steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.steps div{background:var(--card);border:1px solid var(--ln);border-radius:18px;padding:20px}
+.gift{background:var(--g);color:#fff;border-radius:24px;padding:36px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.gift .btn{background:var(--au);color:#1a1a1a}
+.layout{display:grid;gap:24px;padding-top:24px}
+@media(min-width:800px){.layout{grid-template-columns:220px 1fr}}
+.filters{display:grid;gap:12px;align-content:start}
+label{font-size:14px;font-weight:500;display:grid;gap:4px}
+.pd{display:grid;gap:28px;padding-top:24px}@media(min-width:800px){.pd{grid-template-columns:1fr 1fr}}
+.pd .im{aspect-ratio:1;border-radius:24px;display:grid;place-items:center;color:#fff;font:italic 500 22px 'Playfair Display',serif;text-align:center;padding:20px}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.qty{width:80px}
+table{width:100%;border-collapse:collapse}td,th{padding:10px 6px;border-bottom:1px solid var(--ln);text-align:left}
+.wrap{overflow-x:auto}
+footer{background:var(--g);color:#e9efe9;padding:32px 16px}
+footer div{max-width:1120px;margin:auto;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:14px}
+footer b{width:100%;font:700 18px 'Playfair Display',serif}
+#toast{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--ch);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s}
+#toast.on{opacity:1}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<div class="demo">Demonstration data. Products, prices and creators are placeholders, not real listings.</div>
+<header><div class="bar">
+<a class="logo" href="#home" aria-label="Nirmita by Euforg, home"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M4 31Q13 12 27 19" fill="none" stroke="#C9A96A" stroke-width="4" stroke-linecap="round"/><path d="M12 34V9l16 24V13" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><g transform="translate(33 7)" fill="#C9A96A"><ellipse rx="1.6" ry="3.4" cy="-3"/><ellipse rx="1.6" ry="3.4" cy="-3" transform="rotate(72)"/><ellipse rx="1.6" ry="3.4" cy="-3" transform="rotate(144)"/><ellipse rx="1.6" ry="3.4" cy="-3" transform="rotate(216)"/><ellipse rx="1.6" ry="3.4" cy="-3" transform="rotate(288)"/></g></svg><span>NIRMITA<small>By Euforg</small></span></a>
+<div class="search"><label class="sr" style="position:absolute;left:-999px" for="q">Search products</label><input id="q" type="search" placeholder="Search products"></div>
+<button class="ib" id="wl" aria-label="Wishlist">♡ <span id="wc">0</span></button>
+<a class="ib" href="#cart" style="text-decoration:none" aria-label="Cart">Cart <span id="cc">0</span></a>
+</div>
+<nav aria-label="Main"><a href="#home">Home</a><a href="#shop">Shop All</a><a href="#shop-cat">Categories</a><a href="#shop-new">New Arrivals</a><a href="#shop-best">Best Sellers</a><a href="#creators">Our Creators</a><a href="#quality">Our Quality Promise</a><a href="#gifting">Corporate Gifting</a></nav></header>
+<main id="app" tabindex="-1"></main>
+<footer><div><b>Nirmita</b><span><i>Made with Skill. Chosen for Quality.</i> By Euforg</span><span>About</span><span>Contact</span><span>Shipping policy</span><span>Returns and refunds</span><span>Privacy policy</span><span>Terms</span><span>Creator registration</span><span>Corporate enquiries</span></div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+var CATS=[["Home & Living","#174C3C"],["Handmade Crafts","#8a6d3b"],["Fashion & Accessories","#3a5a6b"],["Art & Décor","#6b3a4a"],["Sustainable Products","#2f6b3a"],["Gifts & Hampers","#5a4a7a"]];
+var CR=[{id:"c1",n:"Creator A",loc:"Kerala",bio:"Placeholder biography for a verified creator profile."},{id:"c2",n:"Creator B",loc:"Kerala",bio:"Placeholder biography. Real creators appear only after admin verification."},{id:"c3",n:"Creator C",loc:"India",bio:"Placeholder biography with consented details only."}];
+var P=[];var names=["Woven Storage Basket","Coconut Shell Bowl Set","Block-Print Tote","Terracotta Wall Plate","Bamboo Desk Organiser","Festive Gift Hamper","Hand-Dyed Scarf","Jute Table Runner"];
+names.forEach(function(n,i){var c=i%6;P.push({id:i+1,n:n,cat:CATS[c][0],col:CATS[c][1],price:[899,649,549,1199,799,1999,749,499][i],old:i%3==0?[1099,0,0,0,0,0,0,0][i]||0:0,stock:i==4?3:20,cr:CR[i%3],pop:9-i,mat:["Cane","Coconut shell","Cotton","Terracotta","Bamboo","Mixed","Silk blend","Jute"][i],del:"5–7 days"})});
+var cart={},wish={},app=document.getElementById("app");
+function $(s){return document.querySelector(s)}
+function inr(n){return "₹"+n.toLocaleString("en-IN")}
+function toast(m){var t=$("#toast");t.textContent=m;t.className="on";setTimeout(function(){t.className=""},1800)}
+function card(p){return '<article class="card"><div class="im" style="background:'+p.col+'" role="img" aria-label="'+p.n+' placeholder image">'+p.n+'</div><div class="b"><span class="badge">Quality approved</span><a class="t" href="#p-'+p.id+'">'+p.n+'</a><span class="mu">'+p.cat+'</span><span class="price">'+inr(p.price)+(p.old?'<s>'+inr(p.old)+'</s>':'')+'</span><span class="mu">No reviews yet</span><div class="row" style="margin-top:auto"><button class="btn" data-add="'+p.id+'">Add to cart</button><button class="ib" data-wish="'+p.id+'" aria-label="Wishlist '+p.n+'">♡</button></div></div></article>'}
+function crCard(c){return '<article class="card"><div class="b"><h3>'+c.n+'</h3><span class="mu">'+c.loc+'</span><p>'+c.bio+'</p><a class="btn o" href="#creators" style="align-self:flex-start">View profile</a></div></article>'}
+function home(){return '<div class="hero"><div><h1>Exceptional Products. Extraordinary Creators.</h1><p>Discover thoughtfully crafted products made by talented creators. Every purchase brings exceptional craftsmanship to more homes.</p><div class="row"><a class="btn" href="#shop">Explore Products</a><a class="btn o" href="#creators">Meet Our Creators</a></div></div><div class="art" role="img" aria-label="Hero image placeholder">Hero photograph: premium handcrafted products</div></div>'+
+'<section><h2>Shop by category</h2><div class="grid cats">'+CATS.map(function(c){return '<a href="#shop" data-cat="'+c[0]+'" style="background:'+c[1]+'">'+c[0]+'</a>'}).join("")+'</div></section>'+
+'<section><h2>Best sellers</h2><div class="grid">'+P.slice(0,4).map(card).join("")+'</div></section>'+quality()+
+'<section><h2>Meet our creators</h2><div class="grid">'+CR.map(crCard).join("")+'</div></section>'+
+'<section><h2>New arrivals</h2><div class="grid">'+P.slice(4,8).map(card).join("")+'</div></section>'+gifting()+
+'<section><h2>Customer reviews</h2><p class="mu">Verified reviews appear here after real purchases. None are shown in demonstration mode.</p></section>'}
+function quality(){return '<section id="quality"><h2>Quality is our standard.</h2><p class="mu">Every listed product goes through a defined approval process.</p><div class="steps"><div><h3>1. Creator verification</h3><p class="mu">Identity and eligibility reviewed by our team.</p></div><div><h3>2. Product quality inspection</h3><p class="mu">Materials, finish and function checked against our standards.</p></div><div><h3>3. Final product approval</h3><p class="mu">Only approved products are listed for sale.</p></div></div></section>'}
+function gifting(){return '<section id="gifting"><div class="gift"><div><h2>Meaningful Gifts. Exceptional Craftsmanship.</h2><p>Bulk orders and custom hampers for your team and clients.</p></div><a class="btn" href="#gifting">Explore Corporate Gifting</a></div></section>'}
+var F={q:"",cat:"",max:99999,sort:"pop",stock:false};
+function shop(){var L=P.filter(function(p){return (!F.q||p.n.toLowerCase().indexOf(F.q.toLowerCase())>-1)&&(!F.cat||p.cat==F.cat)&&p.price<=F.max&&(!F.stock||p.stock>0)});
+L.sort(function(a,b){return F.sort=="lo"?a.price-b.price:F.sort=="hi"?b.price-a.price:F.sort=="new"?b.id-a.id:b.pop-a.pop});
+return '<div class="layout"><form class="filters" onsubmit="return false" aria-label="Filters"><label>Category<select id="fc"><option value="">All</option>'+CATS.map(function(c){return '<option'+(F.cat==c[0]?' selected':'')+'>'+c[0]+'</option>'}).join("")+'</select></label><label>Max price<select id="fp"><option value="99999">Any</option><option value="700"'+(F.max==700?' selected':'')+'>Up to ₹700</option><option value="1000"'+(F.max==1000?' selected':'')+'>Up to ₹1,000</option></select></label><label>Sort by<select id="fs"><option value="pop">Popularity</option><option value="new"'+(F.sort=="new"?' selected':'')+'>Newest</option><option value="lo"'+(F.sort=="lo"?' selected':'')+'>Price: low to high</option><option value="hi"'+(F.sort=="hi"?' selected':'')+'>Price: high to low</option></select></label><label><span><input type="checkbox" id="fa" style="width:auto"'+(F.stock?' checked':'')+'> In stock only</span></label></form><div><h1>Shop all</h1><p class="mu">'+L.length+' products</p>'+(L.length?'<div class="grid">'+L.map(card).join("")+'</div>':'<p>No products match. Clear a filter or change your search.</p>')+'</div></div>'}
+function prod(id){var p=P.filter(function(x){return x.id==id})[0];if(!p)return '<p>Product not found. <a href="#shop">Back to shop</a></p>';
+return '<div class="pd"><div class="im" style="background:'+p.col+'" role="img" aria-label="'+p.n+' placeholder image">'+p.n+'</div><div><span class="badge">Quality approved</span><h1>'+p.n+'</h1><p class="price" style="font-size:22px">'+inr(p.price)+'</p><p class="mu">Placeholder description. Material: '+p.mat+'. Stock: '+p.stock+' available. Estimated delivery: '+p.del+'.</p><div class="row"><label>Quantity<input class="qty" id="pq" type="number" min="1" max="'+p.stock+'" value="1"></label></div><div class="row" style="margin-top:12px"><button class="btn" data-add="'+p.id+'" data-q="1">Add to cart</button><button class="btn o" data-buy="'+p.id+'">Buy now</button></div><h2 style="margin-top:28px">Meet the creator</h2><p>'+p.cr.n+', '+p.cr.loc+'. <span class="mu">'+p.cr.bio+'</span></p><h3>Reviews</h3><p class="mu">No reviews yet. Customers can review after a verified purchase.</p></div></div><section><h2>Related products</h2><div class="grid">'+P.filter(function(x){return x.id!=p.id}).slice(0,4).map(card).join("")+'</div></section>'}
+function cartv(){var ids=Object.keys(cart);if(!ids.length)return '<h1>Your cart</h1><p>Your cart is empty. <a href="#shop">Browse products</a></p>';var tot=0;
+var rows=ids.map(function(i){var p=P[i-1],q=cart[i],s=p.price*q;tot+=s;return '<tr><td>'+p.n+'</td><td>'+inr(p.price)+'</td><td><input class="qty" type="number" min="1" max="'+p.stock+'" value="'+q+'" data-qty="'+i+'" aria-label="Quantity for '+p.n+'"></td><td>'+inr(s)+'</td><td><button class="ib" data-rm="'+i+'">Remove</button></td></tr>'}).join("");
+return '<h1>Your cart</h1><div class="wrap"><table><tr><th>Item</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr>'+rows+'</table></div><p class="price" style="font-size:20px">Total: '+inr(tot)+'</p><p class="mu">Checkout needs the Razorpay backend, which is not connected in this prototype.</p><button class="btn" data-co>Proceed to checkout</button>'}
+function page(t,b){return '<h1>'+t+'</h1><p>'+b+'</p>'}
+function render(){var h=location.hash.slice(1)||"home",v;
+if(h=="home")v=home();else if(h.indexOf("shop")==0){if(h=="shop-new")F.sort="new";if(h=="shop-best")F.sort="pop";v=shop()}
+else if(h.indexOf("p-")==0)v=prod(h.slice(2));else if(h=="cart")v=cartv();
+else if(h=="creators")v='<h1>Our creators</h1><div class="grid">'+CR.map(crCard).join("")+'</div><p class="mu">Creator registration is subject to admin verification. Disability documents are never shown publicly.</p>';
+else if(h=="quality")v=quality();else if(h=="gifting")v=gifting();else v=home();
+app.innerHTML=v;document.querySelectorAll("nav a").forEach(function(a){a.removeAttribute("aria-current");if(a.getAttribute("href")=="#"+h)a.setAttribute("aria-current","page")});
+$("#cc").textContent=Object.keys(cart).reduce(function(s,k){return s+cart[k]},0);$("#wc").textContent=Object.keys(wish).length}
+function add(id,q){cart[id]=Math.min((cart[id]||0)+q,P[id-1].stock);toast("Added to cart");render()}
+document.addEventListener("click",function(e){var t=e.target.closest("button,a");if(!t)return;
+if(t.dataset.add){var q=t.dataset.q?+($("#pq")||{value:1}).value||1:1;add(+t.dataset.add,q)}
+else if(t.dataset.buy){cart[t.dataset.buy]=+$("#pq").value||1;location.hash="cart";render()}
+else if(t.dataset.wish){var w=t.dataset.wish;if(wish[w])delete wish[w];else wish[w]=1;toast("Wishlist updated");$("#wc").textContent=Object.keys(wish).length}
+else if(t.dataset.rm){delete cart[t.dataset.rm];render()}
+else if(t.dataset.co)toast("Checkout is not connected yet");
+else if(t.dataset.cat){F.cat=t.dataset.cat}});
+document.addEventListener("change",function(e){var i=e.target;
+if(i.id=="fc")F.cat=i.value;else if(i.id=="fp")F.max=+i.value;else if(i.id=="fs")F.sort=i.value;else if(i.id=="fa")F.stock=i.checked;
+else if(i.dataset.qty){cart[i.dataset.qty]=Math.max(1,Math.min(+i.value||1,P[i.dataset.qty-1].stock))}else return;render()});
+$("#q").addEventListener("input",function(e){F.q=e.target.value;if(location.hash!="#shop")location.hash="shop";else render()});
+$("#wl").addEventListener("click",function(){toast(Object.keys(wish).length+" in wishlist")});
+window.addEventListener("hashchange",function(){render();window.scrollTo(0,0)});render();
+</script></body></html>
